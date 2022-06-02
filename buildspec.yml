@@ -17,3 +17,9 @@ phases:
   post_build:
     commands:
       - echo Tests Complete
+reports:
+  jest_reports:
+    files:
+      - test-report
+    file-format: JUNITXML
+    base-directory: test     
