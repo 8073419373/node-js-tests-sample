@@ -9,17 +9,16 @@ phases:
     commands:
       - echo Installing source NPM dependencies...
       - npm install 
-      - npm install --save-dev jest-junit
   build:
     commands:
       - echo Running Tests
-      - npm test --updateSnapshot
+      - npm test 
   post_build:
     commands:
       - echo Tests Complete
-reports:
-  jest_reports:
-    files:
-      - test-report
-    file-format: JUNITXML
-    base-directory: test     
+# reports:
+  # jest_reports:
+    # files:
+      # - test-report
+    # file-format: JUNITXML
+    # base-directory: test     
